@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task1 Document</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        .calci {
+            border: 2px solid rgb(168, 100, 100);
+            border-radius: 2px;
+            padding: 5px;
+            width: 200px;
+            background-color: rgb(154, 199, 199);
+
+
+        }
+
+        #ans {
+            text-align: center;
+            padding: 8px;
+            width: 180px;
+            height: 10px;
+            margin-bottom: 3px;
+
+        }
+
+        button {
+            height: auto;
+            width: auto;
+            font-size: 10px;
+        }
+
+        .btn {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 3px;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let ansplace = document.getElementById("ans");
+            let buttons = document.querySelectorAll(".btn button");
+
+            let input = "";
+
+            buttons.forEach((button) => {
+                button.addEventListener("click", () => {
+                    let value = button.value;
+
+                    if (value === "=") {
+                        try {
+                            ansplace.value = eval(input);
+                        } catch (error) {
+                            ansplace.value = "Error";
+                        }
+                    } else if (value === "c") {
+                        input = "";
+                        ansplace.value = "";
+                    } else {
+                        input += value;
+                        ansplace.value = input;
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="calci">
+        <input type="text" id="ans" placeholder="answer">
+        <div class="btn">
+            <button value="+">+</button>
+            <button value="9">9</button>
+            <button value="=">=</button>
+            <button value="c">c</button>
+            <button value="-">-</button>
+            <button value="6">6</button>
+            <button value="7">7</button>
+            <button value="8">8</button>
+            <button value="*">*</button>
+            <button value="3">3</button>
+            <button value="4">4</button>
+            <button value="5">5</button>
+            <button value="%">%</button>
+            <button value="0">0</button>
+            <button value="1">1</button>
+            <button value="2">2</button>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
