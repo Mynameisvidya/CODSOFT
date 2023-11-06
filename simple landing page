@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Crafters</title>
+
+    <style>
+        body,
+        h1,
+        h2,
+        p,
+        ul {
+            margin: 0;
+            padding: 0;
+     	}
+
+        header {
+            background: #b78c6e;
+            padding: 6px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 10px;
+	         max-height:110px;
+            
+        }
+	
+        .logo {
+            margin: 1px 1px;
+
+        }
+
+        .logo img {
+            height: 75px;
+            position: relative;
+            margin: 2px 3px;
+            border-radius: 75px;
+	    
+        }
+        .listnav {
+            list-style: none;
+            display: flex;
+	
+        }
+
+        li {
+            margin-right: 20px;
+            padding-right: 25px;
+	 
+        }
+
+        ul li a {
+   	    color:black;
+            text-decoration: none;
+            font-size: 26px;
+	    text-shadow:2px 2px grey;
+        }
+	
+	
+        li a:hover {
+            color: #763931;
+            font-size: 30px;
+            background-color: white;
+            border-radius: 13px;
+        }
+	
+        #home {
+            font-size: 30px;
+            text-shadow: 2px 3px grey;
+            text-align: center;
+            margin-top: 8px;
+            margin-bottom: 6px;
+        }
+
+        #home:hover {
+            background-color: #efc3a4;
+        }
+
+        .about-left {
+            text-align: center;
+
+        }
+
+        .about-left img {
+            border-radius: 8px;
+            box-shadow: 4px 5px #985e49;
+        }
+
+        .about-left p {
+            font-size: 32px;
+            color: #622a0f;
+            text-shadow: 2px 2px #d6a671;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .about-right {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+        }
+
+        .about-right p {
+            font-size: 29px;
+            margin-bottom: 20px;
+            color: brown;
+            text-shadow: 1px 2px black;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .buttons a {
+            background-color: #ffa500;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+
+        .buttons a:hover {
+            background-color: #ff8000;
+
+        }
+
+
+        #reviews,
+        #order {
+            padding: 40px;
+            background: #e8c6af;
+            color: #652a0e;
+            text-shadow: 1px 1px #a3795b;
+            font-size: 18px;
+            font-family: Gill Sans', ' Gill Sans MT', Calibri, ' Trebuchet MS', ' sans-serif';
+         }
+
+        #order {
+            text-align: right;
+        }
+
+        footer {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 0;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="logo1.png" alt="Coffee Logo"></div>
+            <ul class="listnav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Blogs</a></li>
+                <li><a href="#menu">Menu</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Coffee Crafters</h2>
+    </section>
+
+    <section id="about">
+        <div class="about-left">
+            <img src="coffee1.jpg" alt="Coffee1">
+            <p>@Coffee Crafters</p>
+        </div>
+        <div class="about-right">
+            <p>Discover the perfect blend of flavor and warmth in every cup of Coffee Crafters' coffee. Sip, savor, and
+                enjoy! Coffee, a flavorful escape in every cup, is an invitation to savor life's moments and awaken your senses.</p>
+
+            <div class="buttons">
+                <a href="#reviews">Reviews</a>
+                <a href="#order">Order Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <h2>Customer Reviews</h2>
+        <p>Review 1: "The best coffee I've ever had!"</p>
+        <p>Review 2: "A cozy place with great coffee."</p>
+	<p>for more reviews<br><a href="https:\\www.checkreviews.com" target="_blank" >click here</a></p>
+    </section>
+
+    <section id="order">
+        <h2>Order Now</h2>
+        <p>Explore our menu and order your favorite coffee today.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Coffee Crafters</p>
+    </footer>
+</body>
+</html>            
