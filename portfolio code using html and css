@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+
+body {
+    background-color: #ffcccb;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    height:30px;
+
+}
+
+header h1 {
+    font-size: 28px;
+    margin: 10px 0;
+    text-align:left;
+    padding:10px;
+
+}
+nav {
+    background-color: #fff;
+    display: flex;
+    justify-content:flex-end;
+    align-items:center;
+    padding: 8px;
+    height:12px;
+}
+ul {
+    list-style: none;
+    display: inline;
+}
+
+ul li {
+    display: inline;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #333;
+    transition: color 0.1s;
+    margin:10px;
+    cursor:pointer;
+}
+
+ul li a:hover {
+    color:white;
+    background-color:grey;
+    border-radius:8px;
+    padding:10px;
+}
+main {
+    display: flex;
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+}
+
+.left-section {
+    text-align: center;
+    flex: 1;
+
+}
+.left-section img {
+    border-radius: 50%;
+    max-width: 150px;
+}
+.left-section h1 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+.left-section p {
+    font-size: 16px;
+    margin: 10px 0;
+    font-family:'sans-serif', verdana;
+}
+
+.social-links {
+    margin-top: 2px;
+}
+
+.social-links a {
+    text-decoration: none;
+    margin: 0 5px;
+}
+.social-links a img{
+    height:40px;
+    width:40px;
+
+}
+
+.right-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.right-section h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.right-section p {
+    font-size: 26px;
+    margin: 10px 0;
+	font-family: fantasy;
+}
+
+footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 25px;
+    text-align:left;
+    color: #333;
+    transition: color 0.5s;
+}
+
+footer a:hover {
+    color: blue;
+}
+
+.contact p {
+    font-size: 16px;
+}
+footer p {
+    font-size: 17px;
+    margin: 20px 0;
+  	color:black;
+}
+#copy:hover{
+        color:white;
+        background-color:grey;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1> Portfolio</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section class="left-section">
+                <img src="logo4.jpg" alt="Vidya">
+                <p><b>Vidya</b><br>Welcome to my profile</p>
+                <p>Computer science student who loves exploring new things, volunteering,
+                        and working with new people.</p>
+                <div class="social-links">
+			
+                    <a href="https://www.linkedin.com/vidya" target="_blank">
+                        <img src="link1.png" alt="LinkedIn"></a>
+                    <a href="https://www.instagram.com/vidya" target="_blank">
+                        <img src="insta.jpg" alt="Instagram"></a>
+                    <p>connect me with above links</p>
+                </div>
+            </section>
+            <section class="right-section">
+                <h2>Languages Spoken</h2>
+                <p>I can speak Kannada (native), Hindi (fluent), and Telugu (conversational). 
+                    I'm also comfortable communicating professionally in English.</p>
+                <h2>Blogs</h2>
+                <p>I enjoy sharing insights on various topics such as new technologies, spirituality, 
+                    and life. 
+                    Explore my thoughts and perspectives on these subjects through my blog posts.</p>   
+            </section>
+        </main>
+        <footer>
+        <a href="cv resume.pdf" target="_blank">Download Resume in PDF format</a>
+		
+            <div class="contact">
+                <p>Address: bangalore</p>
+                <p>Email: vidya@email.com</p>
+                <p>Phone: +91-0987654321</p>
+            </div>
+            <p id="copy">&copy; 2023 Vidya</p>
+        </footer>
+    </div>
+</body>
+</html>
